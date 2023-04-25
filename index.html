@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | E-commerce product page</title>
+</head>
+
+<body>
+  <main>
+    <nav>
+      <ul class="nav-ul">
+        <li class="list-item">Collections</li>
+        <li class="list-item">Man</li>
+        <li class="list-item">Woman</li>
+        <li class="list-item">About</li>
+        <li class="list-item">Contact</li>
+      </ul>
+    </nav>
+    <header>
+
+      <div class="left-side-header">
+        <img src="./images/icon-menu.svg" alt="menu" id="open-menu" class="menu-icon">
+        <img src="./images/icon-close.svg" alt="close" id="close-menu" class="menu-icon disappear">
+        <img src="./images/logo.svg" alt="logo" id="logo">
+        <ul>
+          <li class="list-item">Collections</li>
+          <li class="list-item">Man</li>
+          <li class="list-item">Woman</li>
+          <li class="list-item">About</li>
+          <li class="list-item">Contact</li>
+        </ul>
+      </div>
+
+      <div class="cart-profile">
+        <div id="notif">0</div>
+        <svg id="cart" width="22" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill="#69707D" fill-rule="nonzero"/></svg>
+        <img src="./images/image-avatar.png" alt="avatar" id="profile">
+      </div>
+    </header>
+    <div class="cart-cont-wrapper">
+      <div class="cart-cont" id="cart-section">
+        <div id="cart-content-added">
+          <label class="heading-cart">Cart</label>
+          <hr>
+          <div class="product-info" id="product-info">
+            <img src="./images/image-product-1-thumbnail.jpg" alt="img" width="15%">
+            <div class="info">
+              <label class="title">Fall Limited Edition Sneakers</label>
+              <label class="price-cart">$125.00 x <span id="equantity-cart">3</span><span class="bold"> $<span
+                    id="full-price-cart">375</span>.00</span></label>
+            </div>
+            <img src="./images/icon-delete.svg" alt="delete" id="delete">
+          </div>
+          <button id="checkout">Checkout</button>
+        </div>
+        <div id="cart-empty">
+          <label class="heading-cart">Cart</label>
+          <hr>
+          <div class="cart-empty-inner">
+            <label>Your cart is empty.</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="image-cont" id="image-cont">
+        <div class="big-images">
+          <div class="prev-cont arrow-cont" id="prev">
+            <img src="./images/icon-previous.svg" alt="pevious" class="arrow">
+          </div>
+          <div class="next-cont arrow-cont" id="next">
+            <img src="./images/icon-next.svg" alt="next" class="arrow">
+          </div>
+          <img src="./images/image-product-1.jpg" alt="product" width="100%" id="img">
+        </div>
+        <div class="small-images">
+          <img src="./images/image-product-1-thumbnail.jpg" alt="image1" class="thumb thumbnail-active">
+          <img src="./images/image-product-2-thumbnail.jpg" alt="image2" class="thumb">
+          <img src="./images/image-product-3-thumbnail.jpg" alt="image3" class="thumb">
+          <img src="./images/image-product-4-thumbnail.jpg" alt="image4" class="thumb">
+        </div>
+      </div>
+      <div class="product-buy-cont">
+        <h2>Sneaker Company</h2>
+        <h1>Fall Limited Edition Sneakers</h1>
+        <p>These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole,
+          they’ll withstand everything the weather can offer.</p>
+        <div class="price-cont">
+          <div class="price-discount">
+            <label class="price">$<span id="price">125</span>.00</label>
+            <div class="discount-cont">
+              <label id="discount">50%</label>
+            </div>
+          </div>
+          <label class="old-price">$<span id="old-price">250</span>.00</label>
+        </div>
+        <div class="quantity-cart-cont">
+          <div class="equantity">
+            <div id="minus">
+              <svg class="oper" width="12" height="4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M11.357 3.332A.641.641 0 0 0 12 2.69V.643A.641.641 0 0 0 11.357 0H.643A.641.641 0 0 0 0 .643v2.046c0 .357.287.643.643.643h10.714Z" id="a"/></defs><use fill="#FF7E1B" fill-rule="nonzero" xlink:href="#a"/></svg>
+            </div>
+            <div id="number">1</div>
+            <div id="plus">
+              <svg class="oper" width="12" height="12" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M12 7.023V4.977a.641.641 0 0 0-.643-.643h-3.69V.643A.641.641 0 0 0 7.022 0H4.977a.641.641 0 0 0-.643.643v3.69H.643A.641.641 0 0 0 0 4.978v2.046c0 .356.287.643.643.643h3.69v3.691c0 .356.288.643.644.643h2.046a.641.641 0 0 0 .643-.643v-3.69h3.691A.641.641 0 0 0 12 7.022Z" id="b"/></defs><use fill="#FF7E1B" fill-rule="nonzero" xlink:href="#b"/></svg>
+            </div>
+          </div>
+          <button id="add-cart"><svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
+                fill="#fff" fill-rule="nonzero" /></svg>Add to cart</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="./script.js"></script>
+</body>
+
+</html>
