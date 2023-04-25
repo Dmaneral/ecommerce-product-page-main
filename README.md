@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/Dmaneral/ecommerce-product-page-main](https://github.com/Dmaneral/ecommerce-product-page-main)
+- Live Site URL: [https://dmaneral.github.io/ecommerce-product-page-main/](https://dmaneral.github.io/ecommerce-product-page-main/)
 
 ## My process
 
